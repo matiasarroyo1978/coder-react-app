@@ -1,0 +1,7 @@
+.list-cont{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    
+}

@@ -1,0 +1,40 @@
+.card:hover {  
+   /* box-shadow: 5px 10px 20px 1px rgba(255 , 255, 255, 0.273) !important; */
+   box-shadow: 5px 10px 20px 1px rgba(8, 5, 5, 0.767) !important;
+   transition: all 0.7s linear;
+}
+
+.card-body {
+    padding: 2rem 0 !important;
+    
+}
+
+
+.card-text {
+    padding: 0.3rem 1rem !important;
+    font-size: 1rem !important;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.card-img-top {
+    display: flex;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    
+}
+
+.title-prod-dest {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.title-prod-dest span {
+    color: var(--orange);
+}

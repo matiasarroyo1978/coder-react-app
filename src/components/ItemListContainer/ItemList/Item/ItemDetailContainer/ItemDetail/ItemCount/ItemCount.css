@@ -1,0 +1,41 @@
+.btn-cant{
+    text-decoration: solid;
+    border: none;
+    margin: 0.5rem;
+    background-color: #eeeef5;
+
+}
+
+.btn-agregar{
+    text-decoration: solid;
+    border: none;
+    margin: 0.5rem;
+    background-color: white;
+    color: var(--grey);
+    background-color: #eeeef5;
+
+}
+.btn-agregar p {
+    font-size: 0.75rem;
+}
+.btn-agregar:hover{
+    transform: scale(1.025);
+    color:var(--orange);
+    transition: 0.5s;
+
+}
+.btn-terminar-compra{
+    border: none;
+    background-color: white;
+}
+.terminar-compra{
+    font-weight: bold;
+    color: var(--blue);
+    margin: 0.5rem;
+    text-decoration: none;
+}
+.terminar-compra:hover{
+    transform: scale(1.025);
+    color: var(--orange);
+    transition: 0.5s;
+}

@@ -1,0 +1,43 @@
+.texto{
+    display: flex;
+    justify-content: center;
+}
+.form-consul-cont{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.form-consul-cont .formulario-consulta{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    
+}
+
+
+.form-consul-cont .formulario-consulta input{
+    margin: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #eeeef5;
+}
+.form-consul-cont .formulario-consulta textarea{
+    margin: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 150px;
+    background-color: #eeeef5;
+}
+
+.alerta-error{
+    background-color: white;
+    color: red;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:  'Staatliches', cursive;
+}

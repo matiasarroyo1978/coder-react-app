@@ -1,0 +1,17 @@
+.boton-generico{
+    background: rgb(36,68,116);
+    background: linear-gradient(90deg, rgba(36,68,116,1) 0%, rgba(53,96,161,1) 75%, rgba(53,104,180,1) 100%);
+    border: none;
+    color:white;
+    border-radius: 10%;
+    margin: 10px;
+    font-size: 20px;
+    width:minimum;
+}
+
+.boton-generico:hover{
+    background: rgb(204,100,28);
+    background: linear-gradient(90deg, rgba(204,100,28,1) 0%, rgba(221,148,97,1) 100%);
+    color: white;
+    transition: 0.5s;
+}

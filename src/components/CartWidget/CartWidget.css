@@ -1,0 +1,32 @@
+.icono-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:1.5rem;
+    color:var(--orange);
+    margin-top: 0.5rem;
+    color: darkgray;
+}
+
+@media screen and (max-width: 300px) {
+    .icono-carrito{
+        display: none;
+        
+    }
+}
+
+
+.icono-carrito:hover{
+    color:rgb(255,194,158);
+    transition: 0.5s;
+}
+.icono-carrito .cantidad-prod{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 0.4%;
+}

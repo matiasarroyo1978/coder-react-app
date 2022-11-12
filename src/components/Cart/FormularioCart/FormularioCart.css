@@ -1,0 +1,48 @@
+.formulario-comprador{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 50px;
+}
+.formulario-comprador input{
+    margin: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #eeeef5;
+}
+.swal-modal{
+    height: 300px;
+}
+.swal-modal .swal-icon--success__ring{
+    border: 4px solid var(--blue)
+}
+.swal-modal .swal-icon--success__line{
+    background-color: var(--orange);
+}
+.swal-modal .swal-title {
+    font-size: 20px;
+}
+.swal-modal .swal-footer {
+    text-align: center;
+}
+.swal-modal .swal-footer button {
+    background-color: var(--grey);
+    border: none;
+    color:white
+}
+.swal-modal .swal-footer button:hover {
+    background-color:var(--orange);
+    border: solid 1px rgb(128, 142, 143);
+    color: white
+}
+
+.alerta-error{
+    background-color: white;
+    color: red;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:  'Staatliches', cursive;
+}

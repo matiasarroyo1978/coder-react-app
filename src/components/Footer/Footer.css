@@ -1,0 +1,28 @@
+.pie-de-pagina{
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    top: 1rem;
+    background: rgb(139, 178, 236);
+    background: linear-gradient(90deg, rgb(60, 84, 121) 0%, rgb(85, 116, 163) 75%, rgb(103, 149, 218) 100%);
+    color:white;
+    
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+        
+}
+.pie-de-pagina a{
+    color:rgb(218, 226, 226);
+    
+}
+.pie-de-pagina a:hover{
+    color:var(--orange);
+}
+.pie-de-pagina p{
+    color:rgb(207, 217, 218);
+}
+
+
+

@@ -1,0 +1,25 @@
+.card-prod{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+    border-color: var(--blue);
+    border-width: 3px;
+    border-radius: 0.25rem;
+    /* background-color: rgb(33,37,41);
+    color: white; */
+}
+.card-prod:hover{
+    transform: scale(1.01);
+    
+}
+
+.btn-detalles{
+    background: rgb(36,68,116);
+    background: linear-gradient(90deg, rgba(36,68,116,1) 0%, rgba(53,96,161,1) 75%, rgba(53,104,180,1) 100%);
+    border: none;
+}
+
+.btn-detalles:hover{
+    background-color: var(--orange);
+    transition: 0.5s;
+}

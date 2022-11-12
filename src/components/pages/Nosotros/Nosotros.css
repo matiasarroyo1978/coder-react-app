@@ -1,0 +1,49 @@
+.nosotrosGlobal{
+    margin: 3rem 8rem 30rem 8rem;
+}
+
+@media screen and (max-width: 960px){
+    .nosotrosGlobal{
+        margin: 3rem 1rem 30rem 1rem;
+        align-items: center;
+        width: 15rem;
+    }
+    
+}
+
+.nosotros{
+    float: right;
+    width: 25rem;
+    margin-left: 1rem;
+    margin-right: 6rem;
+    margin-top: 1.5rem;
+    
+}
+
+@media screen and (max-width:960px) {
+    .nosotros{
+        float: none;
+        display:block;
+        width: 20rem;
+        margin-right: 1rem;
+        
+    }
+    
+}
+
+
+.nosotrosGlobal img{
+    width:30rem;
+    height:25rem;
+    float: left;
+}
+
+@media screen and (max-width:960px) {
+    .nosotrosGlobal img{ 
+        margin-left:3rem;
+        margin-right: 3rem;
+        width: 18rem;
+        height: 18rem;
+        margin-bottom: 2rem;
+    }
+}
