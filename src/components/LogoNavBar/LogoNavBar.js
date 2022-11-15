@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/herrajes.png'
+import logo from '../images/herrajes.png'
 import './LogoNavBar.css'
 const LogoNavBar = () => {
   return (

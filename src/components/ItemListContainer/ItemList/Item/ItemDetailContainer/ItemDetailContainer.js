@@ -1,7 +1,7 @@
 import React,{useEffect , useState} from 'react';
 import ItemDetail from './ItemDetail/ItemDetail';
 import { useParams } from "react-router-dom";
-import {getFirestore} from '../../../../../firebase/firebaseConfig';
+import db from '../../../../../firebase/firebaseConfig';
 
 import './ItemDetailContainer.css';
 
@@ -11,7 +11,7 @@ function ItemDetailContainer() {
 
     useEffect(() => {
 
-        const dbQuery = getFirestore()
+        const dbQuery = db
         dbQuery.collection('items').doc(id).get()
         .then(respuesta => setItem({...respuesta.data(), id: respuesta.id}))
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from './Card';
 
-import producto1 from '../../assets/5002.jpeg';
-import producto2 from '../../assets/granero.jpeg';
-import producto3 from '../../assets/vigas.jpeg';
+import producto1 from '../images/5002.jpeg';
+import producto2 from '../images/granero.jpeg';
+import producto3 from '../images/vigas.jpeg';
 import './Card.css';
 const cards = [
     {

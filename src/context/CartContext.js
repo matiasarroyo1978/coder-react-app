@@ -3,7 +3,7 @@ import React, { createContext, useState} from 'react';
 export const CartContext = createContext();
 
 
-export default function UseCartContext({ children }){
+function UseCartContext({ children }){
 
   const [cartList, setCartList] = useState([]); // {nombre: nombre, precio:precio,itemQ: qty} 
   
@@ -64,3 +64,4 @@ export default function UseCartContext({ children }){
     </CartContext.Provider>
   );
 };
+export default UseCartContext

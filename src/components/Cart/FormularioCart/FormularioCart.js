@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import {CartContext} from '../../../context/CartContext';
-import {getFirestore} from '../../../firebase/firebaseConfig';
+import db from '../../../firebase/firebaseConfig';
 import swal from 'sweetalert';
 import BotonGenerico from '../../../BotonGenerico/BotonGenerico';
 import './FormularioCart.css';
@@ -29,7 +29,7 @@ function FormularioCart() {
     const handlerSubmit=(evt)=>{
         evt.preventDefault()
         
-        const db = getFirestore()
+        // const db = getFirestore()
         db.collection('order').add(order)
 
         .then(({id})=>{

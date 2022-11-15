@@ -5,16 +5,31 @@ const Nosotros = () => {
     return (
         <div className='nosotrosGlobal'>
             <img
-                //style={{width:"30rem", height:"25rem" , float:"left"}}                
-                // className="d-block w-50"
-                src="images/Nosotros.png"
+                src="../../images/quienes.png"
                 alt="Nosotros"
                 />
             <div className='nosotros'>
-            <h2> Breve descripción</h2>
-            <p> Fundada en el año 2019 por Oreste Paredes, una ferretería familiar ubicada en la ciudad de Córdoba dedicada a la comercialización y distribución de insumos tales como abrasivos, adhesivos, lubricantes, sistemas de fijación, herramientas de corte, herramientas manuales, instrumentos de medición, equipos hidráulicos, máquinas eléctricas, máquinas neumáticas, máquinas herramientas, accesorios para máquinas herramientas, elementos para matricería, elementos de protección personal y seguridad industrial, máquinas y consumibles de soldadura, entre otros.</p>
+            <h2> Quienes Somos</h2>
+            <p> Empresa familiar con mas de 35 años de experiencia en los rubros de Herrajes y Maderas para la construcción.</p>
+            </div>
+            <img
+                src="../../images/mision.png"
+                alt="Mision"
+                />
+            <div className='nosotros'>
+            <h2> Mision</h2>
+            <p> Proveer soluciones con maderas y herrajes manejando un surtido completo que permita llegar a los clientes con un servicio de alta calidad y a un precio competitivo a través de un personal altamente capacitado. </p>
+            </div>
+            <img
+                src="../../images/vision.png"
+                alt="Vision"
+                />
+            <div className='nosotros'>
+            <h2> Vision</h2>
+            <p> Llegar a ser reconocidos como mejor distribuidores del distrito y buscando más expansión en el mercado.</p>
             </div>
         </div>
+        
     );
 }
 
