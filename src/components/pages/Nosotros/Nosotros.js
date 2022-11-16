@@ -5,7 +5,7 @@ const Nosotros = () => {
     return (
         <div className='nosotrosGlobal'>
             <img
-                src="../../images/quienes.png"
+                src='../../images/quienes.png'
                 alt="Nosotros"
                 />
             <div className='nosotros'>
@@ -13,7 +13,7 @@ const Nosotros = () => {
             <p> Empresa familiar con mas de 35 años de experiencia en los rubros de Herrajes y Maderas para la construcción.</p>
             </div>
             <img
-                src="../../images/mision.png"
+                src='../../images/mision.png'
                 alt="Mision"
                 />
             <div className='nosotros'>
@@ -21,7 +21,7 @@ const Nosotros = () => {
             <p> Proveer soluciones con maderas y herrajes manejando un surtido completo que permita llegar a los clientes con un servicio de alta calidad y a un precio competitivo a través de un personal altamente capacitado. </p>
             </div>
             <img
-                src="../../images/vision.png"
+                src='../../images/vision.png'
                 alt="Vision"
                 />
             <div className='nosotros'>

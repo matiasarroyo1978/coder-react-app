@@ -1,12 +1,10 @@
 import React,{useEffect,useState} from 'react';
 import Item from './Item/Item.js';
 import { useParams } from "react-router-dom";
-// // import {getFirestore} from '../../../firebase/firebaseConfig';
-// import { getFirestore } from '../../../crearDB.js';
 
 import Spinner from 'react-bootstrap/Spinner';
 import './ItemList.css';
-// import datos from 'datos.json';
+
 
 function ItemList() {
    
@@ -66,3 +64,6 @@ useEffect(()=>{
     
 };
 export default ItemList
+
+
+
