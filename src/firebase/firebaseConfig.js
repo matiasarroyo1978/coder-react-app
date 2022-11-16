@@ -1,19 +1,28 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+
+
 const firebaseConfig = {
   
-  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
-  databaseURL: process.env.REACT_APP_FIREBASE_DATABASEURL,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
-  appId: process.env.REACT_APP_FIREBASE_APPID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENTID
+  apiKey: "AIzaSyCKZl__Cv5iRybo5ATPKIg8ODHm0m3cd00",
+
+  authDomain: "herrajes-arroyo.firebaseapp.com",
+
+  databaseURL: "https://herrajes-arroyo-default-rtdb.firebaseio.com",
+
+  projectId: "herrajes-arroyo",
+
+  storageBucket: "herrajes-arroyo.appspot.com",
+
+  messagingSenderId: "439401360684",
+
+  appId: "1:439401360684:web:b7b74768ebf29a44315089",
+
+  measurementId: "G-7BNZVX486P"
+
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-export default db;
+initializeApp(firebaseConfig,{
+  experimentalForceLongPolling: true, // this line
+  useFetchStreams: false, // and this line
+});
 

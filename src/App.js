@@ -10,6 +10,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import CartContextProvider from './context/CartContext';
 import Cart  from './components/Cart/Cart';
 import Footer from './components/Footer/Footer';
+
 import './App.css';
 import Home from './components/pages/Home/Home';
 // import 'bootstrap/dist/css/bootstrap.min.css';
