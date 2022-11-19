@@ -10,9 +10,9 @@
     text-decoration: solid;
     border: none;
     margin: 0.5rem;
-    background-color: white;
+    background-color: rgb(241, 169, 169);
     color: var(--grey);
-    background-color: #eeeef5;
+    background-color: #a1a1c0;
 
 }
 .btn-agregar p {

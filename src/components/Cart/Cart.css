@@ -1,11 +1,10 @@
-table{
+.table{
     width: 60rem;
     margin-top: 5rem;
     margin: 2rem 10rem;
     
     
 }
-
 @media screen and (max-width: 960px) {
     table{
         width: auto;

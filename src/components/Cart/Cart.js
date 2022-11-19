@@ -19,8 +19,8 @@ function Cart() {
             <p className='texto-p'>El carrito está vacio</p>
         :
       
-        <div>
-            <Button style={{marginTop:"2rem"}} variant="danger"  onClick={cleanList}> Vaciar el Carrito </Button>
+        <div className='container d-grid'>
+            <Button display="flex" justify-content="center" style={{marginTop:"2rem"}} variant="danger"  onClick={cleanList}> Vaciar el Carrito </Button>
             <table>
                 <thead>
                 <tr>
@@ -32,10 +32,10 @@ function Cart() {
                 <tbody>
                 {cartList.map(item => 
                     <tr key = {item.item.id}>
-                        <td><img src={item.item.imgDir} width='20rem' height='90rem' alt="" /><p>{item.item.title}</p></td>
+                        <td><img src={item.item.imgDir} width='120rem' height='140rem' alt="" /><p>{item.item.title}</p></td>
                         <td>{item.itemQ}</td>
                         <td>${item.item.price*item.itemQ}</td>
-                        <td><ImCross className="remove"onClick={()=>{removeItem(item)}}/></td> 
+                        <td><ImCross className="remove d-flex justify-content-center"onClick={()=>{removeItem(item)}}/></td> 
                     </tr>
                 )}                        
                 </tbody>

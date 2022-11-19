@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import BotonGenerico from '../../../BotonGenerico/BotonGenerico';
 import './Contacto.css';
-// import {getFirestore} from '../../firebase/firebaseConfig';
-import items from '../../utils/Mock';
+import {getFirestore,collection,addDoc} from 'firebase/firestore';
 
-// import swal from 'sweetalert';
+
+import swal from 'sweetalert';
 
 function Contacto() {
     
@@ -34,8 +34,9 @@ function Contacto() {
         evt.preventDefault()
         
 
-        const db = items
-        db.collection('consulta').add(consulta)
+        const db =getFirestore()
+        const data = collection(db,'consulta')
+        addDoc(data,consulta)
 
 
         .then(({id})=>{
@@ -44,12 +45,12 @@ function Contacto() {
                 return;}
      
  
-            // swal({
-            //     title:`Consulta enviada!`,
-            //     text:`La identificacion de consulta es : ${id}`,
-            //     icon:"success",
-            //     height: "340px"
-            // })
+            swal({
+                title:`Consulta enviada!`,
+                text:`La identificacion de consulta es : ${id}`,
+                icon:"success",
+                height: "340px"
+            })
 
             setError(false);
             setConsultor(initialState);
@@ -87,7 +88,7 @@ function Contacto() {
                             name='txtConsulta'
                             defaultValue={consultor.txtConsulta}
                         />
-                        <div>
+                        <div className='d-flex justify-content-center'>
                             <BotonGenerico contenido ={'Enviar'}/>
                         </div>
                     </form>

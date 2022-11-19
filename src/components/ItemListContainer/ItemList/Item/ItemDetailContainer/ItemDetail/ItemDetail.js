@@ -22,7 +22,7 @@ function ItemDetail({item={}}){
 
         swal({
             title:`Agregaste ${cant} items de ${item.title}`,
-            icon:"success",
+            icon: 'success',
             timer:"2000",
             button: false,
 
@@ -37,7 +37,6 @@ function ItemDetail({item={}}){
                 <h4>{item.title}</h4>
                 <img src={item.imgDir} alt="producto seleccionado"/> 
                 <p>Stock: {item.stock}</p>
-                {/* <p>Tamaño: {item.size}</p> */}
                 <p>Detalle: {item.description}</p>
                 <p>Precio: ${item.price}</p>
                 <ItemCount stock={item.stock} initial={1} onAdd={handleCount} />

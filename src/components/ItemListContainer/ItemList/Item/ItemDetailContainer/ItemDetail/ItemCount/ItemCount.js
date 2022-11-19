@@ -28,18 +28,19 @@ function ItemCount(props) {
     return (
         <>
             <div>
-                <div className="cad-body">
+                <div className="card-body">
                     <button type="button" className="btn-cant" onClick={bajarCantidad}>-</button>
                         <label>{cantidad}</label>
                     <button type="button" className="btn-cant" onClick={subirCantidad}>+</button> <br/>
 
                     {
                     onAddTo ?
-                    <button type="button" className="btn-agregar" onClick={()=> {onAdd(cantidad) ; setOnAddTo(false)}}>
+                    
+                    <button type="button" className="btn-agregar " onClick={()=> {onAdd(cantidad) ; setOnAddTo(false)}}>
                             <FontAwesomeIcon icon={faCartPlus} size="2x"/>
                             <p>Agregar al carrito</p>
                     </button>
-
+                    
                     :
 
                     <button type="button" className= "btn-terminar-compra" >

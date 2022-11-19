@@ -1,14 +1,14 @@
 import React, { useState, useContext } from 'react';
 import {CartContext} from '../../../context/CartContext';
-import {getFirestore} from "firebase/firestore";
+
 import swal from 'sweetalert';
 import BotonGenerico from '../../../BotonGenerico/BotonGenerico';
 import './FormularioCart.css';
-
+import {getFirestore, collection, addDoc} from 'firebase/firestore'
 
 
 function FormularioCart() {
-    const {cartList,costoTotal,cleanList}= useContext(CartContext)  
+    const {cartList,costoTotal}= useContext(CartContext)  
     const [buyer, setBuyer] = useState(initialState)
     const order = {buyer, item:cartList, totalCompra: `$${costoTotal()}`} // buyer:buyer, 
     
@@ -30,7 +30,8 @@ function FormularioCart() {
         evt.preventDefault()
         
         const db = getFirestore()
-        db.collection('order').add(order)
+        const data = collection(db,'order')
+        addDoc(data, order)
 
         .then(({id})=>{
             if(nombre === '' || apellido ==='' || domicilio === '' || provincia === '' || postcode === '' || telefono === '' || mail === ''){
@@ -39,16 +40,16 @@ function FormularioCart() {
             swal({
                 title:`Compra realizada por $${costoTotal()}, Muchas gracias`,
                 text:`Tu orden de compra es : ${id}`,
-                icon:"success",
+                icon:'success',
                 height: "340px"
             })
             setError(false);
             setBuyer(initialState);
             //actualizar el stock del producto
-            
+          
         })
         .catch(err=>console.log(err))
-        cleanList()
+        
     }
 
     return (

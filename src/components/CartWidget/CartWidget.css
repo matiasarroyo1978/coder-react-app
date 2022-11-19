@@ -17,7 +17,7 @@
 
 
 .icono-carrito:hover{
-    color:rgb(255,194,158);
+    color:rgb(250, 94, 3);
     transition: 0.5s;
 }
 .icono-carrito .cantidad-prod{
