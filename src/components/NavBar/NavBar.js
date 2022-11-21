@@ -44,12 +44,12 @@ function Brand() {
         <NavLink ><Link to="/products" className='link-nav' activeclassname="link-activo">Productos</Link></NavLink>
 
         <NavDropdown title="Categorias" id="collasible-nav-dropdown" className='link-nav'>
-          <NavDropdown.Item><NavLink><Link to="/category/cerraduras" className='link-nav'   activeclassname="link-activo" > Cerraduras </Link></NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink ><Link to="/category/corredizos" className='link-nav'   activeclassname="link-activo"> Corredizos </Link></NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink ><Link to="/category/bisagras" className='link-nav'   activeclassname="link-activo"> Bisagras </Link></NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink ><Link to="/category/adhesivos" className='link-nav'   activeclassname="link-activo"> Adhesivos </Link></NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink ><Link to="/category/picaportes" className='link-nav'   activeclassname="link-activo"> Picaportes </Link></NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink ><Link to="/category/maderas" className='link-nav'   activeclassname="link-activo"> Maderas </Link></NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink><Link to="/categoria/cerraduras" className='link-nav'   activeclassname="link-activo" > Cerraduras </Link></NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink ><Link to="/categoria/corredizos" className='link-nav'   activeclassname="link-activo"> Corredizos </Link></NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink ><Link to="/categoria/bisagras" className='link-nav'   activeclassname="link-activo"> Bisagras </Link></NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink ><Link to="/categoria/adhesivos" className='link-nav'   activeclassname="link-activo"> Adhesivos </Link></NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink ><Link to="/categoria/manijas" className='link-nav'   activeclassname="link-activo"> Picaportes </Link></NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink ><Link to="/categoria/maderas" className='link-nav'   activeclassname="link-activo"> Maderas </Link></NavLink></NavDropdown.Item>
         </NavDropdown>
                
         <Nav.Link ><Link to="/contacto" className='link-nav'   activeclassname="link-activo">Contacto</Link></Nav.Link>

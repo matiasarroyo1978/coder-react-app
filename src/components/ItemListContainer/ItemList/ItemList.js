@@ -15,17 +15,16 @@ function ItemList() {
     
     useEffect(() => {
         setLoading(true)
-        
-                const db=getFirestore();
-                const dbQuery = collection(db, 'productos')
+                if(categoryId){
+                    const db=getFirestore();
+                    const dbQuery = collection(db, 'productos')
+                    const queryFilter = query(dbQuery, where("categoryId", "==", categoryId))
                 
-                console.log(dbQuery)
-                const queryFilter = query(dbQuery)
-                where('categoryId', '==', categoryId)
+               
+                    getDocs(queryFilter)
                 
-                getDocs(queryFilter)
                 
-                .then(resp =>{
+                    .then(resp =>{
                     console.log(resp)
                     if(resp.size === 0){
                         console.log('No hay productos')
@@ -35,12 +34,26 @@ function ItemList() {
                     .finally(() =>{
                         setLoading(false)
                     })
-                    
-                   
+              
+                }else{
+                    const db=getFirestore();
+                    const dbQuery = collection(db, 'productos')
+                    getDocs(dbQuery)
+                
+                
+                    .then(resp =>{
+                    console.log(resp)
+                    if(resp.size === 0){
+                        console.log('No hay productos')
+                    }else{
+                        setItemList(resp.docs.map(item =>({id:item.id, ...item.data()})))}
+                    })
+                    .finally(() =>{
+                        setLoading(false)
+                    })
+                
+                }              
     }, [categoryId])
-
-
-
     return(
         
         <div className="row">

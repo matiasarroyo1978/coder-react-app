@@ -2,8 +2,12 @@
     max-width: 1200px;
     display: flex;
     margin: auto;
-}
 
+}
+.nosotrosGlobal img{
+    width: 18vh !important;
+    height: 18vh !important;
+}
 @media screen and (max-width: 960px){
     .nosotrosGlobal{
         margin: 3rem 1rem 30rem 1rem;
@@ -19,7 +23,7 @@
     margin-left: 1rem;
     margin-right: 6rem;
     margin-top: 1.5rem;
-    
+
 }
 
 @media screen and (max-width:960px) {
