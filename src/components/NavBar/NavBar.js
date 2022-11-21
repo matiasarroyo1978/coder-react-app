@@ -40,7 +40,6 @@ function Brand() {
     
          <Nav className="me-auto navegacion">
       
-        <NavLink ><Link to="/" className='link-nav'  activeclassname="link-activo">Inicio</Link></NavLink>
         <NavLink ><Link to="/products" className='link-nav' activeclassname="link-activo">Productos</Link></NavLink>
 
         <NavDropdown title="Categorias" id="collasible-nav-dropdown" className='link-nav'>
