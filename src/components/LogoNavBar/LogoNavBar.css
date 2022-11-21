@@ -1,14 +1,7 @@
 .logo-navbar{
     display: flex;
     margin-top: 0%;
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 130px;
   
-}
-.menu-title{
-    color:white;
-    margin-top: 25px;
-    max-width: 350px;
-    font-size: 25px;
-   
 }

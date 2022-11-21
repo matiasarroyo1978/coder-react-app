@@ -14,7 +14,7 @@
 }
 
 .btn-detalles{
-    background: rgb(36,68,116);
+    background: rgb(24, 46, 78);
     background: linear-gradient(90deg, rgba(36,68,116,1) 0%, rgba(53,96,161,1) 75%, rgba(53,104,180,1) 100%);
     border: none;
 }

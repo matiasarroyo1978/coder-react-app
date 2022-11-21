@@ -22,6 +22,7 @@ function ItemList() {
                 console.log(dbQuery)
                 const queryFilter = query(dbQuery)
                 where('categoryId', '==', categoryId)
+                
                 getDocs(queryFilter)
                 
                 .then(resp =>{
