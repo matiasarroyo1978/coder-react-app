@@ -49,7 +49,6 @@ function Cart() {
             <div className="titulo-form">
                 <h3>Ingresá tus datos para enviar tu pedido</h3>
                 <FormularioCart/>
-                
             </div>
         </div>
         }

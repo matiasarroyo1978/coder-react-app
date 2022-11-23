@@ -55,12 +55,12 @@ function Brand() {
         <Nav.Link ><Link to="/nosotros" className='link-nav'   activeclassname="link-activo">Nosotros</Link></Nav.Link>
         
         <CartWidget className="d-flex"/> 
-       
+        
         </Nav>
-          
+        <button variant="light" onClick={toggleTheme}><FontAwesomeIcon icon={faToggleOff}/></button>
         </Navbar.Collapse>
           
-        <button variant="light" onClick={toggleTheme}><FontAwesomeIcon icon={faToggleOff}/></button> 
+        
         </Container>
   
       </Navbar>
