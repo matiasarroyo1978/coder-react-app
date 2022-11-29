@@ -8,7 +8,7 @@ import {getFirestore, collection, addDoc} from 'firebase/firestore'
 
 
 function FormularioCart() {
-    const {cartList,costoTotal}= useContext(CartContext)  
+    const {cartList,costoTotal,cleanList}= useContext(CartContext)  
     const [buyer, setBuyer] = useState(initialState)
     const order = {buyer, item:cartList, totalCompra: `$${costoTotal()}`} // buyer:buyer, 
     
@@ -45,8 +45,9 @@ function FormularioCart() {
             })
             setError(false);
             setBuyer(initialState);
+            cleanList()
             //actualizar el stock del producto
-          
+
         })
         .catch(err=>console.log(err))
         
