@@ -24,8 +24,11 @@
     font-weight: bold;
 }
 .total{
+    display: flex;
+    justify-content: center;
     color: var(--blue); 
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 .remove{
     color:rgb(128, 142, 143)
