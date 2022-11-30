@@ -51,11 +51,11 @@ function FormularioCart() {
         .then((res) =>{
             console.log(res)
             cartList.forEach((product) =>{
-            const query = doc(db,'productos', product.id)
+            const query = doc(db,'productos', product.item.id)
             updateDoc(query,{
-                stock: product.stock - product.itemQ,
+                stock: product.item.stock - product.itemQ,
             })
-          
+            
         })
         })
         .catch(err=>console.log(err))
