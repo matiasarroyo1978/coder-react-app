@@ -4,13 +4,12 @@ import './firebase/firebaseConfig';
 import App from "./App";
 import './index.css';
 
+
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
-  // <StrictMode>
     <App />
-  // </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
