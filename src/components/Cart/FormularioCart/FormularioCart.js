@@ -4,7 +4,7 @@ import {CartContext} from '../../../context/CartContext';
 import swal from 'sweetalert';
 import BotonGenerico from '../../../BotonGenerico/BotonGenerico';
 import './FormularioCart.css';
-import {getFirestore, collection, addDoc} from 'firebase/firestore'
+import {getFirestore, collection, addDoc, doc, updateDoc} from 'firebase/firestore'
 
 
 function FormularioCart() {
@@ -28,26 +28,35 @@ function FormularioCart() {
     }
     const handlerSubmit=(evt)=>{
         evt.preventDefault()
-        
+    
         const db = getFirestore()
         const data = collection(db,'order')
         addDoc(data, order)
 
-        .then(({id})=>{
+        .then((response)=>{
             if(nombre === '' || apellido ==='' || domicilio === '' || provincia === '' || postcode === '' || telefono === '' || mail === ''){
                 setError(true);
                 return;}
             swal({
                 title:`Compra realizada por $${costoTotal()}, Muchas gracias`,
-                text:`Tu orden de compra es : ${id}`,
+                text:`Tu orden de compra es : ${response.id}`,
                 icon:'success',
-                height: "340px"
+                height: "140px"
             })
             setError(false);
             setBuyer(initialState);
             cleanList()
-            //actualizar el stock del producto
-
+            return(response)
+        })  
+        .then((res) =>{
+            console.log(res)
+            cartList.forEach((product) =>{
+            const query = doc(db,'productos', product.id)
+            updateDoc(query,{
+                stock: product.stock - product.itemQ,
+            })
+          
+        })
         })
         .catch(err=>console.log(err))
         
