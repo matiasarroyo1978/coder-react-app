@@ -12,47 +12,25 @@ function ItemList() {
 
     const { categoryId } = useParams() // id categoria
     const [loading, setLoading]=useState(true)
-    
+    const getProducts = () =>{
+        const db=getFirestore();
+        const dbQuery = collection(db, 'productos')
+        const querySnapshot = categoryId ? query(dbQuery, where("categoryId", "==", categoryId)):dbQuery;
+        getDocs(querySnapshot)
+        .then((resp) => {
+            setItemList(resp.docs.map(item =>({id:item.id, ...item.data()})))
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+        .finally(() =>{
+                setLoading(false)
+        })
+        
+    }
     useEffect(() => {
         setLoading(true)
-                if(categoryId){
-                    const db=getFirestore();
-                    const dbQuery = collection(db, 'productos')
-                    const queryFilter = query(dbQuery, where("categoryId", "==", categoryId))
-                
-               
-                    getDocs(queryFilter)
-                
-                
-                    .then(resp =>{
-                    console.log(resp)
-                    if(resp.size === 0){
-                        console.log('No hay productos')
-                    }else{
-                        setItemList(resp.docs.map(item =>({id:item.id, ...item.data()})))}
-                    })
-                    .finally(() =>{
-                        setLoading(false)
-                    })
-              
-                }else{
-                    const db=getFirestore();
-                    const dbQuery = collection(db, 'productos')
-                    getDocs(dbQuery)
-                
-                
-                    .then(resp =>{
-                    console.log(resp)
-                    if(resp.size === 0){
-                        console.log('No hay productos')
-                    }else{
-                        setItemList(resp.docs.map(item =>({id:item.id, ...item.data()})))}
-                    })
-                    .finally(() =>{
-                        setLoading(false)
-                    })
-                
-                }              
+        getProducts()
     }, [categoryId])
     return(
         
