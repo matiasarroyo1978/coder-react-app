@@ -1,6 +1,9 @@
 # Proyecto de Comercio Electronico en React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto hecho en el curso de FrontEnd ReactJS de Coderhouse enfocado en realizar pedidos en línea con una amplia cantidad de productos gastronómicos.
+
+8 semanas
+2 clases semanales
 
 ## Available Scripts
 
