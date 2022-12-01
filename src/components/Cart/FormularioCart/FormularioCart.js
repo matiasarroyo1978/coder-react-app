@@ -41,6 +41,7 @@ function FormularioCart() {
                 title:`Compra realizada por $${costoTotal()}, Muchas gracias`,
                 text:`Tu orden de compra es : ${response.id}`,
                 icon:'success',
+                timer: '2000',
                 height: "140px"
             })
             setError(false);

@@ -25,7 +25,7 @@ function ItemList() {
         })
         .finally(() =>{
                 setLoading(false)
-        })
+        });
         
     }
     useEffect(() => {
