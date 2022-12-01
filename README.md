@@ -1,6 +1,6 @@
 # Proyecto de Comercio Electronico en React JS
 
-Proyecto hecho en el curso de FrontEnd ReactJS de Coderhouse enfocado en realizar pedidos en línea con una amplia cantidad de productos gastronómicos.
+Proyecto hecho en el curso de FrontEnd ReactJS de Coderhouse enfocado en realizar pedidos en línea con una amplia cantidad de productos de herrajes y maderas.
 
 8 semanas
 2 clases semanales
